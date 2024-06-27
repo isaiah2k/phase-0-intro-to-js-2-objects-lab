@@ -1,5 +1,5 @@
 const employee = {
-    name: 'Isaiah', streetAddress: '123 Main St, Vacaville, CA'
+    name: `Isaiah`, streetAddress: `123 Main St, Vacaville, CA`
 }
 const updateEmployeeWithKeyAndValue = (employee, key, value) => ({
 ...employee,[key]: value
@@ -16,4 +16,4 @@ const destructivelyDeleteFromEmployeeByKey = (employee, key) => {
     delete employee[key]
     return employee
 }
-const updatedEmployee = updateEmployeeWithKeyAndValue(employee, 'position', 'Manager')
+const updatedEmployee = updateEmployeeWithKeyAndValue(employee, `position`, `Manager`)
